@@ -6,19 +6,18 @@ int main(){
     int n1,n2,n3,n4,a,b,c,d,a1,b1,n=0;
     srand(time(NULL));
     n1=rand()%10;
+    
     n2=rand()%10;
-    while (n1==n2)
-    n2=rand()%10;
+    while (n1==n2)  n2=rand()%10;
     n3=rand()%10;
-    while (n1==n3||n2==n3)
-    n3=rand()%10;
+    while (n1==n3||n2==n3)  n3=rand()%10;
     n4=rand()%10;
-    while (n1==n4||n2==n4||n3==n4)
-    n4=rand()%10;
+    while (n1==n4||n2==n4||n3==n4)  n4=rand()%10;
+
     /*n1=1;
     n2=2;
-    n3=3;
-    n4=4;*/
+    n3=1;
+    n4=1;*/
     printf("%d%d%d%d\n",n1,n2,n3,n4);
     while(true)
     {

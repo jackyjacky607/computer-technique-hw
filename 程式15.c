@@ -4,7 +4,7 @@ int main(){
 	printf("Please input a number:");
 	scanf("%d",&i);
 	for(j=2;j<=i;j++){
-		for (k=2;k<j;k++)
+		for (k=2;k*k<=j;k++)
 			if(j%k==0)
 			break;
         
