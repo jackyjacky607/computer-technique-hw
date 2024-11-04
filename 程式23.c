@@ -18,7 +18,7 @@ int main(){
         }
     }
     for(i=0;i<len2;i++){
-        if ((a[i]>'A'&& a[i]<'Z') || (a[i]>'a'||a[i]<'z')){
+        if ((b[i]>'A'&& b[i]<'Z') || (b[i]>'a'||b[i]<'z')){
             d[tolower(b[i])-'a']+=1;
         }
     }
