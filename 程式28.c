@@ -10,8 +10,8 @@ int fact(int n){
     return num;
 
 }
-int count(char a[13],char b,int len){
-    int i,count=1;
+int count(char a[],char b,int len){
+    int i,count=0;
     for(i=0;i<len;i++){
         if (a[i]==b)
         count++;
@@ -32,7 +32,7 @@ int main(){
             if (a[j]==b) break;;
         }
         if (j>=i){
-        ans/= fact(count(a[13],b,len));
+        ans/= fact(count(a,b,len));
         }
     }
     printf("The number of permutations is %d",ans);
