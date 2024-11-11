@@ -18,10 +18,8 @@ void find(char *s){
     int list[100][2];
     for (int i=0; i<n;i++){
         for (int j=i;j<n;j++){
-            if (check(s,i,j)&&(j-i+1)>maxlength){
-                
-                int currentLength = j-i+1;
-                if (check(s,i,j)){
+            int currentLength = j-i+1;
+            if (check(s,i,j)){
                     if (currentLength>maxlength){
                         maxlength=currentLength;
                         count=0;
@@ -34,19 +32,20 @@ void find(char *s){
                         list[count][1]=j;
                         count++;
                     }
-                }
             }
         }
-        printf("最長回文為:");
+        
+    }
+    printf("最長回文為:");
         for (int i=0;i<count;i++){
             int start = list[i][0];
             int end = list[i][1];
             for (int k=start; k<=end;k++){
                 putchar(s[k]);
             }
+            if(i==count-1)break;
             printf(",");
         }
-    }
 }
 int main(){
     char a[101];
