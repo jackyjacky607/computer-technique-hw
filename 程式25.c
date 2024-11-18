@@ -6,7 +6,7 @@ int main(){
     int num,cur=0,pic;
     srand(time(NULL));
     num=rand()%31+10;
-    num=33;
+    //num=33;
     printf("N=%d\n",num);
     
     while(cur<num){
