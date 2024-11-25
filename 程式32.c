@@ -13,9 +13,12 @@ void sort_fraction(int (*arr)[2],int n){
     for(i=0;i<n;i++){
         for(j=0;j<=n-i-2;j++){
             if ((*(arr+j)[0])*(*(arr+j+1)[1])>(*(arr+j)[1])*(*(arr+j+1)[0])){
-                temp=*(arr+j);
-                *(arr+j)=*(arr+j+1);
-                *(arr+j+1)=temp;
+                temp[0]=arr[j][0];
+                temp[1]=arr[j][1];
+                arr[j][0]=arr[j+1][0];
+                arr[j][1]=arr[j+1][1];
+                arr[j+1][0]=temp[0];
+                arr[j+1][1]=temp[1];
             }
         }
     }
@@ -27,15 +30,17 @@ int main(){
     scanf("%d",&n);
     for(i=0;i<n-1;i++){
         for (j=1;j<i+2;j++){
+            if (gcd(i+2,j)!=1) continue;
             frac[a][0]=j;
             frac[a][1]=i+2;
             a++;
         }
     }
-    /*for(i=0;i<a;i++){
+    for(i=0;i<a;i++){
         printf("%d %d\n",frac[i][0],frac[i][1]);
-    }*/
-   sort_fraction(frac,a);
+    }
+    printf("\n");
+    sort_fraction(frac,a);
     for(i=0;i<a;i++){
         printf("%d %d\n",frac[i][0],frac[i][1]);
     }
