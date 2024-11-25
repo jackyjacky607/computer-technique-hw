@@ -40,7 +40,7 @@ int main(){
         printf("%d %d\n",frac[i][0],frac[i][1]);
     }
     printf("\n");
-    sort_fraction(frac,a);
+   sort_fraction(frac,a);
     for(i=0;i<a;i++){
         printf("%d %d\n",frac[i][0],frac[i][1]);
     }
