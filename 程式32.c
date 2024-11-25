@@ -9,7 +9,7 @@ int gcd(int n1,int n2){
     return (n1>n2?n1:n2);
 }
 void sort_fraction(int (*arr)[2],int n){
-    int i,j,temp,a,b,c;
+    int i,j,temp[2],a,b,c;
     for(i=0;i<n;i++){
         for(j=0;j<=n-i-2;j++){
             if ((*(arr+j)[0])*(*(arr+j+1)[1])>(*(arr+j)[1])*(*(arr+j+1)[0])){
@@ -35,5 +35,8 @@ int main(){
     /*for(i=0;i<a;i++){
         printf("%d %d\n",frac[i][0],frac[i][1]);
     }*/
-   sort_fraction(frac[0],a);
+   sort_fraction(frac,a);
+    for(i=0;i<a;i++){
+        printf("%d %d\n",frac[i][0],frac[i][1]);
+    }
 }
