@@ -23,10 +23,10 @@ int main(){
     if ((y2%4==0 && y2%100!=0)||y2%400==0){
         if(m2<=2) ans--;
     }
-    printf("%d",ans);
+    //printf("%d\n",ans);
     f=find(y1,y2,4);
     h=find(y1,y2,100);
     fh=find(y1,y2,400);
-    ans=f-h+fh;
+    ans+=f-h+fh;
     printf("%d\n",ans);
 }
