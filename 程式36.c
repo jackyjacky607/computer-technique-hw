@@ -14,7 +14,7 @@ int main()
          while(fscanf(DataIn,"%s",word[n]) == 1){
             if (!(word[n][strlen(word[n])-1]>='A' && word[n][strlen(word[n])-1]<='Z'))word[n][strlen(word[n])-1]='\0';
             for (i=0;i<n;i++){
-                if (strcmp(word[i],word[n]))break;
+                if (strcmp(word[i],word[n])==0)break;
             }
             if (i==n){
                 strcpy(record[j],word[n]);
@@ -32,7 +32,7 @@ int main()
         
     }
     for (i=0;i<n;i++){
-        printf("%s",record[i]);
+        printf("%s:%d\n",record[i],count[i]);
          fprintf(DataOut,"%s: %d\n",record[i],count[i]);
     }
     fclose(DataIn);

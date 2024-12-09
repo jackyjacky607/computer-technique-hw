@@ -1,70 +1,35 @@
 MACHINE: 2
- : 0
- : 0
- : 0
- : 0
- : 0
- : 0
- : 0
- : 0
-: 0
-└ёa: 0
-h: 0
- x: 0
-d: 0
-: 0
-╕Ўa: 0
-ФNv╘Ёa: 0
-о   hФ: 0
-xРTvраTv*$Ф: 0
-аФ: 0
-А: 0
-: 0
-: 0
-: 0
-`Ф: 0
-hФ: 0
-: 0
-: 0
-pФ: 0
-╠ a: 0
-B╓┐wZ: 0
-╨Єa: 0
-: 0
-Dїa: 0
-: 0
-(: 0
-: 0
-lЄa: 0
-8їa: 0
-╨Єa: 0
-HHHH: 0
-P: 0
-╨Єa: 0
-▓КAB4: 0
-r: 0
-о: 0
-k: 0
-\: 0
-: 0
-\¤  
-: 0
-: 0
-: 0
-: 0
-d: 0
-: 0
-: 0
-: 0
-: 0
-: 0
-: 0
-
-: 0
-d: 0
-■   ╪Їa: 0
-─Ф: 0
-: 0
-╠ a: 0
-Н
-─w: 0
+LANGUAGES: 11
+AND: 3
+ASSEMBLY: 1
+ARE: 6
+LOW: 4
+LEVEL: 6
+C: 1
+C+: 1
+JAVA: 1
+HIGH: 2
+CLOSER: 1
+TO: 3
+THE: 3
+HARDWARE: 1
+THAN: 1
+CAN: 1
+BE: 1
+CONVERTED: 1
+CODE: 2
+WITHOUT: 1
+USING: 1
+A: 1
+COMPILER: 1
+OR: 1
+INTERPRETER: 1
+RESULTING: 1
+RUNS: 1
+DIRECTLY: 1
+ON: 1
+PROCESSOR: 1
+SIMPLE: 1
+BUT: 1
+DIFFICULT: 1
+USE: 1
