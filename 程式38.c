@@ -54,6 +54,6 @@ int main(){
                 }
             }
         }
-        printf("%d/%d = %.2f",ans,len1,ans/len1);
+        printf("%d/%d = %.2f%%",ans,len1,(float)ans/len1*100);
     }
 }
