@@ -3,6 +3,7 @@
     "files.associations": {
         "程式22.C": "cpp",
         "xmemory": "c",
-        "xutility": "c"
+        "xutility": "c",
+        "xstring": "c"
     }
 }
