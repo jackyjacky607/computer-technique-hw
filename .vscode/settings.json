@@ -1,9 +1,9 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "程式22.C": "cpp",
         "xmemory": "c",
         "xutility": "c",
-        "xstring": "c"
+        "xstring": "c",
+        "stdio.h": "c"
     }
 }
