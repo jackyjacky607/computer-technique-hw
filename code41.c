@@ -13,16 +13,25 @@ int main(){
     int n=0;
     while (fscanf(filein,"%s",word[n])==1)
     {
-        printf("%s\n",word[n]);
+        //printf("%s\n",word[n]);
         int len=strlen(word[n]);
         //printf("%d ",len);
-        if (currentsize+len>max){
-            printf("max\n");
-            for(int i=0;i<n;i++){
-                fprintf(fileout,"%s ",word[n]);
+        if (currentsize+len>=max){
+            //printf("max\n");
+            int i;
+            for(i=0;i<n;i++){
+                fprintf(fileout,"%s ",word[i]);
             }
-            currentsize=0;
+            if(n==0) fprintf(fileout,"%s ",word[0]);
+            int left=max-currentsize;
+            
+            for(int j=0;j<left;j++){
+                fprintf(fileout,"%c",word[i][j]);
+            }
             fprintf(fileout,"\n");
+            currentsize=len-left;
+            n=0;
+            
             continue;
         }
         else
@@ -31,10 +40,13 @@ int main(){
             n++;
             if (currentsize+1>max){
                 for(int i=0;i<n;i++){
-                    fprintf(fileout,"%s ",word[n]);
+                    fprintf(fileout,"%s ",word[i]);
                 }
-                currentsize=0;
-                fprintf(fileout,"\n");
+                if(n==0) fprintf(fileout,"%s ",word[0]);
+                fprintf(fileout,"\n ");
+
+                currentsize=1;
+                n=0;
                 continue;
             }
             else
@@ -43,31 +55,6 @@ int main(){
                 continue;
             }
         }
-        
-        /*char space;
-        if (fscanf(filein,"%c",space)==1&& space!= EOF){
-            if (currentsize+1>max){
-                for(int i=0;i<n;i++){
-                    fprintf(fileout,"%s ",word[n]);
-                }
-                currentsize=0;
-                fprintf(fileout,"\n");
-                continue;
-            }
-            else
-            {
-                currentsize+=1;
-                continue;
-            }
-        }
-        else
-        {
-            for(int i=0;i<n;i++){
-                fprintf(fileout,"%s ",word[n]);
-            }
-            break;
-        }*/
-        
     }
     for(int i=0;i<n;i++){
         fprintf(fileout,"%s ",word[n]);
